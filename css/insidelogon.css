@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px;}
+.error-container{ background:#fff; border:1px solid #eaeaea;  text-align:center; width:450px;font-family:Microsoft Yahei; padding-bottom:30px; border-top-left-radius:5px; border-top-right-radius:5px; position:absolute; top:50%; left:50%; margin:-150px 0 0 -225px;}
+.error-container h1{ font-size:16px; padding:12px 0; background:#303030; color:#fff;} 
+.errorcon{ padding:35px 0; text-align:center; color:#f00; font-size:18px;}
+.errorcon i{ display:block; margin:12px auto; font-size:30px; }
+.errorcon span{color:red;}
+h4{ font-size:14px; color:#666;}
+a{color:#f00;}
+input{width:230px;height:30px;margin-top:10px;}
+#denglu{width:80px;margin:10px 10px;}
+#chongzhi{width:80px;margin:20px 10px;}

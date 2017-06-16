@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+table{width:840px;}
+th,td{border:1px solid #666;}
+th{font-size:24px;}
+td{font-size:18px;padding:1px 3px;}
