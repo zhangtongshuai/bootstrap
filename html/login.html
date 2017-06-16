@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+<title>无标题文档</title>
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="info.html">前端资讯</a></li>
+        <li><a href="course.html">课程选择</a></li>
+        <li><a href="progress.html">课程易学度</a></li>
+        <li class="active"><a href="login.html">注册</a></li>
+        <li><a href="logon.html">登录</a></li>
+      </ul>  
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="about.html">关于我们</a></li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container">
+  	<div id="carousel-example-generic" class="carousel slide marginTop" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="../image/hdp_01.jpg" alt="图1" width="100%">
+        </div>
+        <div class="item">
+          <img src="../image/hdp_02.jpg" alt="图2" width="100%">
+        </div>
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+	</div>
+</div>
+<div class="w1140" style="margin-top:30px"> 
+    <h3 style="font-family:宋体">用户注册</h3>
+<hr/>
+<form class="form-horizontal" action="../php/login.php" method="post" id="form" onSubmit="return submitIndex()">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">用户名</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="user" placeholder="用户名">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">输入密码</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="passwd1" placeholder="输入密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">确认密码</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="passwd2" placeholder="确认密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">手机号</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="telephone" placeholder="手机号">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">地区</label>
+    <div class="col-sm-10">
+      	<select class="form-control" name="area">
+          <option value="">请选择省份</option><option value="山东省">山东省</option><option value="河北省">河北省</option><option value="河南省">河南省</option>
+        </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">性别</label>
+    <div class="col-sm-10">
+      <label class="radio-inline">
+  		<input type="radio" id="inlineRadio1" value="男" name="sex">男
+	  </label>
+      <label class="radio-inline">
+  		<input type="radio" id="inlineRadio2" value="女" name="sex">女
+	  </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">爱好</label>
+    <div class="col-sm-10">
+      	<label class="checkbox-inline">
+  			<input type="checkbox" name="hobby[]" value="音乐">音乐
+		</label>
+      	<label class="checkbox-inline">
+  			<input type="checkbox" name="hobby[]" value="旅游">旅游
+		</label>
+        <label class="checkbox-inline">
+  			<input type="checkbox" name="hobby[]" value="登山">登山
+		</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="xieyi"> 阅读并接受<a href="#">《用户协议》</a>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" style="background:#5cb85c;color:#fff;">注册</button> <button type="reset" class="btn btn-default">重置</button> <a href="index.html"><button type="button" class="btn btn-default" style="background:#d9534f;color:#fff;">已有账号，去登录</button></a>
+    </div>
+  </div>
+</form>
+</div>
+<table class="table table-bordered  w1140" style="margin-top:20px">
+    <tr style="background:#f5f5f5;color:#000">
+      <td>Copyright©1999-2017 北京中公教育科技股份有限公司 .All Rights Reserved 京ICP备10218183号-88 京ICP证161188号</td>
+    </tr>
+</table>
+	
+</body>
+</html>
